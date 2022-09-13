@@ -1,0 +1,35 @@
+.home {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+
+	&__right {
+		width: calc(100% - 250px);
+		margin-left: auto;
+		transition: all 0.2s ease;
+
+		&__title {
+			margin-bottom: 30px;
+		}
+
+		&__unactive {
+			width: 100%;
+		}
+
+		&__mobTabs {
+			display: none;
+		}
+	}
+
+	&__loading {
+		width: 100%;
+		height: 100vh;
+		display: flex;
+	}
+
+	@media (max-width: 1000px) {
+		// &__right {
+		// 	width: calc(100% - 250px);
+		// }
+	}
+}
